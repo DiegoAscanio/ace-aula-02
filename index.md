@@ -367,6 +367,7 @@ Sendo a resposta correta, letra d)
 
 ---
 
+<!-- _class: lead -->
 # Simplificação de Redes de Resistores
 
 
