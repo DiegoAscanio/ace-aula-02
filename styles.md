@@ -8,6 +8,10 @@
     background-color: transparent!important;
   }
 
+  .transparent-table-tr-td-th {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+  }
+
   .cabecalho {
     position: absolute;
     top: 10%;

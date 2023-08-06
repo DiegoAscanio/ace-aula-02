@@ -8,6 +8,10 @@
     background-color: transparent!important;
   }
 
+  .transparent-table-tr-td-th {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+  }
+
   .cabecalho {
     position: absolute;
     top: 10%;
@@ -607,4 +611,331 @@ $$
 
 E ao transformar $Y$ para $\Delta$, se remove um nó do circuito.
 
+</div>
+
+
+---
+
+<div class="cabecalho large">
+
+Resolução do Exemplo por $\Delta \rightarrow Y$
+
+</div>
+<div class="two-columns-50-50">
+<div class="regular">
+
+- Não existem resistores em série ou paralelo:
+
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/5d6b711e0f765ad7e88a6d18b39bf20850ac8e18.svg">
+</center>
+
+</div>
+
+<div class="regular">
+
+- Redesenhando o circuito vemos que temos duas conexões $\Delta$ empilhadas uma sobre a outra:
+
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/ed2ef2bdcfab1d6c66ae3bc17629a2c783d3ec64.svg">
+</center>
+
+- Ao fazermos uma transformação $\Delta \rightarrow Y$, adicionamos um nó ao circuito. Será que isso ordena os resistores de modo que seja possível determinar quem está em série e quem está em paralelo?
+
+</div>
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+
+Resolução do Exemplo por $\Delta \rightarrow Y$
+
+</div>
+<div class="two-columns-50-50">
+<div class="regular">
+
+- Escolhemos arbitrariamente o $\Delta$ inferior:
+
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/a656d249bff7a459daa9df0ebcb2c9b84f318f6d.svg">
+</center>
+
+</div>
+
+<div class="regular">
+
+- Ao fazer $\Delta \rightarrow Y$ no $\Delta$ inferior, os resistores pretos do $\Delta$ são substituídos pelos cinzas da configuração $Y$:
+
+<table class="transparent-table-tr-td-th">
+<tr class="transparent-table-tr-td-th">
+
+<td class="transparent-table-tr-td-th">
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/05cc24f20113bc6937dec9b8e85ee09e032d2a66.svg">
+</center>
+</td>
+<td class="transparent-table-tr-td-th">
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/b0c3af9ae2f46f3efa5620d14b6886971eeac777.svg">
+</center>
+</td>
+
+</tr>
+</table>
+
+</div>
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+
+Resolução do Exemplo por $\Delta \rightarrow Y$
+
+</div>
+<div class="conteudo small" style="margin: auto;">
+<table class="transparent-table-tr-td-th">
+<tr class="transparent-table-tr-td-th">
+
+<td class="transparent-table-tr-td-th">
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/05cc24f20113bc6937dec9b8e85ee09e032d2a66.svg">
+</center>
+</td>
+<td class="transparent-table-tr-td-th">
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/b0c3af9ae2f46f3efa5620d14b6886971eeac777.svg">
+</center>
+</td>
+
+</tr>
+</table>
+
+
+- Aplicando as equações de $\Delta \rightarrow Y$ temos:
+
+$$
+\begin{align}
+R_{1} &= {{R_{b}R_{c}} \over {R_{a} + R_{b} + R_{c}}} = {{3 \times 5} \over {12}} = 1.25 \Omega \\
+R_{2} &= {{R_{a}R_{c}} \over {R_{a} + R_{b} + R_{c}}} = {{4 \times 3} \over {12}} = 1 \Omega \\
+R_{3} &= {{R_{a}R_{b}} \over {R_{a} + R_{b} + R_{c}}} = {{4 \times 5} \over {12}} = {5 \over 3} \Omega
+\end{align}
+$$
+
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+
+Resolução do Exemplo por $\Delta \rightarrow Y$
+
+</div>
+<div class="conteudo normal">
+
+Substituindo o circuito $\Delta$ pelo seu $Y$ equivalente:
+
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/f4a19d613dccddb714e8ca1e8ba002dccc7e628d.svg">
+</center>
+
+Agora que conseguimos distinguir quais resistores estão em paralelo e quais resistores estão em série, o circuito pode ser simplificado para calcular a resistência equivalente. 
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+
+Resolução do Exemplo por $\Delta \rightarrow Y$
+
+</div>
+<div class="conteudo regular" style="margin: auto;">
+
+Somando os resistores do ramo esquerdo e do ramo direito temos:
+
+<table class="transparent-table-tr-td-th">
+<tr class="transparent-table-tr-td-th">
+
+<td class="transparent-table-tr-td-th">
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/f4a19d613dccddb714e8ca1e8ba002dccc7e628d.svg">
+</center>
+</td>
+<td class="transparent-table-tr-td-th">
+<center>
+    <img class="transparent" src="https://cdn.kastatic.org/ka-perseus-images/17c405dba966e5cfeecb4c98cd4b5cfe7e4b1ee0.svg">
+</center>
+</td>
+
+</tr>
+</table>
+
+Calculando a resistência equivalente dos resistores paralelos: ${{1} \over {{1 \over 4.375} + {1 \over 5}}} = {7 \over 3} \Omega$
+
+Somando com a resistência de ${5 \over 3} \Omega$ em série: ${7 \over 3} + {5 \over 3} = {12 \over 3} = 4 \Omega$.
+
+Portanto, a resistência equivalente do segmento de circuito é de $4 \Omega$.
+
+</div>
+
+
+---
+
+<!-- _class: lead -->
+# Divisão da Tensão
+
+
+---
+
+<div class="cabecalho">
+    
+Divisão da Tensão
+
+</div>
+<div class="conteudo" style="font-size: 20px;">
+
+Tecnologias distintas de circuitos integrados (CIs) - TTL e CMOS - trabalham em níveis de tensão diferentes. Os circuitos construídos sobre a tecnologia TTL trabalham com níveis de tensão de 0V até +5V. Já os construídos com CMOS trabalham com níveis de tensão entre 0V e +3.3V.
+
+Não obstante serem tecnologias distintas, frequentemente é necessário que CIs TTL e CMOS trabalhem juntos.
+
+É conhecido que a presença de sobretensão (Tensões acima de +3.3V) em circuitos CMOS pode danificá-los.
+
+Assim, considerando que em muitas situações circuitos TTL e CMOS precisam interagir, como mitigar a sobretensão causada pela tensão superior dos circuitos TTL?
+
+Por meio da sua diminuição! Se houver uma forma de diminuir 5V para 3.3V os circuitos CMOS ficam protegidos contra eventuais danos de sobretensão.
+
+Como diminuir esta tensão? Através da **Divisão da Tensão**!
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Tensão
+</div>
+<div class="conteudo small">
+
+- Em resistores em série, a corrente $i$ é igual em todas as resistências. Porquê a carga elétrica não pode se acumular em um resistor, sempre fluindo do ponto de maior potencial elétrico para o ponto de menor potencial.
+
+- Portanto, $V_{Rk} = R_{k} \cdot i$
+
+<center>
+    <img src="https://cdn.kastatic.org/ka-perseus-images/7c02d028f874842f69e5967b3972ab2e35ec21cf.svg" class="transparent" width="25%">
+</center>
+
+- Pela lei da conservação da energia, sabemos que: $V_{s} = V_{R1} + V_{R2} + V_{R3}$
+
+- Se $V_{S} = 5V$ e $i = 0.25 A$, logo, $5V - 0.25 R_{1} = 3.3V \rightarrow R_{1} = 6.8\Omega$, uma resistência de $6.8 \Omega$ em um circuito com uma corrente de 0.25A provocaria um decaimento de tensão de $1.7V$ suficiente para abaixar a tensão de $5V$ para $3.3V$ após $R_{1}$.
+
+- Porém, nem sempre conhecemos os valores de corrente, as fontes de tensão não necessariamente mantém valores estáveis para corrente, desta forma, precisamos de outros artifícios matemáticos para calcularmos de maneira independente da corrente as tensões $V_{k}$ existentes em cada resistor $R_{k}$.
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Tensão
+</div>
+<div class="conteudo small">
+
+<center>
+    <img src="https://cdn.kastatic.org/ka-perseus-images/7c02d028f874842f69e5967b3972ab2e35ec21cf.svg" class="transparent" width="25%">
+</center>
+
+- A corrente $i$ é igual em todo o circuito.
+- Pela lei de Ohm, $V_{S} = R_{eq} i$ que implica dizer que:
+
+$$ 
+\begin{align}
+V_{S} &= R_{1} i + R_{2} i + R_{3} i \rightarrow V_{S} = i (R_{1} + R_{2} + R_{3}) \\
+i &= {{V_{S}} \over {R_{1} + R_{2} + R_{3}}}
+\end{align}
+$$
+
+- Sabemos que a tensão $V_{k}$ em qualquer $R_{k}$ é dada por $V_{k} = R_{K} \cdot i$.
+- Substituindo $i$ nessa equação temos:
+    - $V_{k} = {R_{k} \over {R_{1} + R_{2} + R_{3}}} \cdot V_{S}$
+
+- Assim, alcançamos a forma geral do princípio da divisão de tensão que elucida que em um circuito com $N$ resistências em série, a tensão $k$ entre os terminais de um resistor $k$ qualquer é dada por:
+
+$$V_{k} = {R_{k} \over {R_{1} + R_{2} + \cdots + R_{N}}} \cdot V_{S}$$
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Tensão
+</div>
+<div class="conteudo small">
+
+Retomando nosso exemplo para mitigar a sobretensão de +5V oriundas de CIs TTL na interação com CIs CMOS.
+
+- Queremos criar uma configuração resistiva que em um resistor, preferencialmente o primeiro resistor do circuito $R_{1}$, a tensão diminua 1.7V, passando de +5V para +3.3V.
+    - Pois, $5V = 1.7V + 3.3V$
+
+<center>
+    <img src="https://cdn.kastatic.org/ka-perseus-images/6b6e0b28312a3590640cf20b54fe950854299558.png" class="transparent" width="30%">
+</center>
+
+- O princípio da divisão da tensão é nosso melhor amigo na tarefa.
+    - Pois, independentemente da corrente, com apenas dois resistores, conseguimos fazer com que a tensão $V_{1}$ nos terminais do resistor $R_{1}$ seja de 1.7V, abaixando assim, a tensão de +5V para +3.3V.
+    - Com apenas dois resistores é possível fazer com que $V_{1}$ seja $+1.7V$.
+    - Considerando que $V_{1} = {R_{1} \over {R_{1} + R_{2}}} \cdot 5V = 1.7V$ então, ${R_{1} \over {R_{1} + R_{2}}} = {1.7 \over 5}$
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Tensão
+</div>
+<div class="conteudo small">
+
+<center>
+    <img src="https://cdn.kastatic.org/ka-perseus-images/6b6e0b28312a3590640cf20b54fe950854299558.png" class="transparent" width="30%">
+</center>
+
+- Queremos criar uma configuração resistiva em que um resistor, preferencialmente o primeiro resistor do circuito $R_{1}$, a tensão diminua 1.7V, passando de +5V para +3.3V.
+    - Pois, $5V = 1.7V + 3.3V$
+
+- Considerando que $V_{1} = {R_{1} \over {R_{1} + R_{2}}} \cdot 5V = 1.7V$ então, ${R_{1} \over {R_{1} + R_{2}}} = {1.7 \over 5}$
+- Definindo $R_{1} = 10 k\Omega$, logo:
+
+$$
+\begin{align}
+5 \times 10 k\Omega &= 1.7 \times (10 k\Omega + R_{2}) \rightarrow \\
+R_{2} &= {33 \over 1.7} k\Omega \rightarrow \\
+R_{2} &\simeq 19.4 k\Omega
+\end{align}
+$$
+
+</div>
+
+
+---
+
+<!-- _class: lead -->
+# Aplicação do Divisor de Tensão
+
+
+---
+
+<div class="conteudo">
+    <center>
+        <img class="transparent" src="./img/aplicacao_divisao_de_tensao.png" width=75%>
+    </center>
 </div>
