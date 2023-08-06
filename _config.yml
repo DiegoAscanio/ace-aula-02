@@ -1,1 +1,1 @@
-exclude: *.md
+exclude: index.md, slides
