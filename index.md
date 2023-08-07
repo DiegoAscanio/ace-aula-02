@@ -796,7 +796,7 @@ Portanto, a resistência equivalente do segmento de circuito é de $4 \Omega$.
 
 ---
 
-<div class="cabecalho">
+<div class="cabecalho large">
     
 Divisão da Tensão
 
@@ -820,20 +820,19 @@ Como diminuir esta tensão? Através da **Divisão da Tensão**!
 
 ---
 
-<div class="cabecalho large">
+<div class="cabecalho" style="font-size: 22px;">
 Divisão da Tensão
 </div>
 <div class="conteudo small">
 
-- Em resistores em série, a corrente $i$ é igual em todas as resistências. Porquê a carga elétrica não pode se acumular em um resistor, sempre fluindo do ponto de maior potencial elétrico para o ponto de menor potencial.
-
-- Portanto, $V_{Rk} = R_{k} \cdot i$
+- Em resistores em série, a corrente $i$ é igual em todas as resistências porquê a carga elétrica não pode se acumular em um resistor, sempre fluindo do ponto de maior potencial elétrico para o ponto de menor potencial. Portanto, $V_{Rk} = R_{k} \cdot i$
 
 <center>
     <img src="https://cdn.kastatic.org/ka-perseus-images/7c02d028f874842f69e5967b3972ab2e35ec21cf.svg" class="transparent" width="25%">
 </center>
 
-- Pela lei da conservação da energia, sabemos que: $V_{s} = V_{R1} + V_{R2} + V_{R3}$
+- Pela conservação da energia, sabemos que: $V_{s} = V_{R1} + V_{R2} + V_{R3}$
+    - Isso se generaliza na Lei de Kirchoff da Tensão que declara que a soma das tensões de todos os elementos de um circuito tem de ser nula: $\sum_{i = 1}^{n}{v_{n}} = 0$.
 
 - Se $V_{S} = 5V$ e $i = 0.25 A$, logo, $5V - 0.25 R_{1} = 3.3V \rightarrow R_{1} = 6.8\Omega$, uma resistência de $6.8 \Omega$ em um circuito com uma corrente de 0.25A provocaria um decaimento de tensão de $1.7V$ suficiente para abaixar a tensão de $5V$ para $3.3V$ após $R_{1}$.
 
@@ -938,4 +937,301 @@ $$
     <center>
         <img class="transparent" src="./img/aplicacao_divisao_de_tensao.png" width=75%>
     </center>
+</div>
+
+
+---
+
+<!-- _class: lead -->
+# Divisão da Corrente
+
+
+---
+
+<div class="cabecalho large">
+
+A Importância da Divisão de Correntes
+
+</div>
+
+<div class="conteudo regular">
+
+As tomadas em nossas casas são conectadas a fios que possuem um limite físico do máximo de corrente que pode fluir neles. Normalmente, estes fios suportam até $10A$ de corrente. Dentro desse limite, estes condutores funcionam bem, mas imagine aparelhos que fazem $12A$ fluir por estes fios, uma corrente que excede o limite operacional dos condutores. Essa corrente excedente, chamada sobrecarga, pode superaquecer e derreter o revestimento dos fios, levando a curtos-circuitos ou até incêndios.
+
+Agora, em circuitos elétricos, frequentemente temos várias cargas ou componentes ligados de forma que a corrente se divide entre eles. Para garantir que cada componente ou caminho do circuito receba uma quantidade segura de corrente, precisamos entender exatamente como essa divisão ocorre. É aqui que entra o princípio da divisão de correntes.
+
+Com a habilidade de calcular a divisão de correntes, podemos assegurar que os circuitos operem de maneira segura pelo correto balanceamento de cargas para prevnir a ocorrência de sobrecargas e consequentemente, curtos-circuitos e/ou incêndios.
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Corrente - Lei de Kirchoff Para Corrente
+</div>
+<div class="conteudo regular">
+
+Para estudarmos a divisão da corrente, facilita nosso entendimento elucidarmos um princípio a ser amplamente desenvolvido nas próximas aulas: A lei de Kirchoff para Corrente (LKC).
+
+Esta lei preconiza que a soma das correntes que entra em um nó de um circuito tem de ser igual a soma das correntes que saem dele. Considerando o nó abaixo, temos as correntes $i_{1}, i_{3} \text{ e } i_{4}$ entrando no nó, enquanto as correntes $i_{2} \text{ e } i_{5}$ saem dele.
+
+<center>
+    <img class="transparent" src="./img/entrada_saida_correntes.png">
+</center>
+
+Assim,
+
+$$
+i_{1} + i_{3} + i_{4} = i_{2} + i_{5}
+$$
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Corrente - Lei de Kirchoff Para Corrente
+</div>
+<div class="conteudo regular">
+
+Para qualquer nó pertencente a um circuito, a LKC pode ser generalizada para as $N$ correntes que convergem nele na forma:
+
+$$
+\sum_{k = 1}^{N}{i_{k}} = 0
+$$
+
+Como a corrente é uma variável em função do diferencial da carga e do tempo, logo, a LKC também estabelece que as cargas que entram em um nó são iguais às que saem dele:
+
+$$
+\begin{align}
+i_{\text{entrada}} &= i_{\text{saida}} \\
+\int {i_{\text{entrada}}(t) dt} &= \int {i_{\text{saida}}(t) dt} \\
+Q_{\text{entrada}} &= Q_{\text{saida}}
+\end{align}
+$$
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Corrente
+</div>
+<div class="two-columns-50-50">
+<div class="regular">
+
+Considere o circuito abaixo:
+
+<center>
+    <img class="transparent" src="./img/circuito_divisao_corrente.png" width=400px>
+</center>
+
+Temos uma corrente $i$ entrando no nó único e três correntes $i_{1}, i_{2} \text{ e } i_{3}$ saindo dele. Uma vez que o circuito possui resistores em paralelo e a corrente se divide ao passar pelo nó único que conecta eles, é preciso lembrar que a corrente sempre busca o caminho de menor resistência (ou de maior condutividade). É essencial considerar este fato para avaliar se os valores de corrente a serem calculados fazem sentido.
+
+</div>
+<div class="regular" style="margin-left: 7.5%;">
+
+Continuando a avaliação do circuito, pelos três resistores em paralelo, temos que a resistência equivalente do circuito é dada por:
+
+$$
+R_{eq} = {{1} \over {{1 \over R_{1}} + {1 \over R_{2}} + {1 \over R_{2}}}} = G_{eq}^{-1}
+$$
+
+Pela Lei de Ohm, sabemos que $v = R_{eq} i$, o que implica em dizer que $i = {v \over R_{eq}} \rightarrow i = v G_{eq}$.
+
+Como os três resitores estão em paralelo, logo a tensão entre os terminais deles é igual. Assim:
+<center>
+
+$i_{1}R_{1} = i_{2}R_{2} = i_{3}R_{3} = i R_{eq}$
+
+</center>
+
+</div>
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Divisão da Corrente
+</div>
+<div class="two-columns-50-50">
+<div class="regular">
+
+<center>
+    <img class="transparent" src="./img/circuito_divisao_corrente.png" width=400px>
+</center>
+
+<center>
+
+$i_{1}R_{1} = i_{2}R_{2} = i_{3}R_{3} = i R_{eq}$
+
+</center>
+
+Portanto, com as devidas manipulações algébricas, a corrente $k$ que passa qualquer ramo de um circuito com resistores em paralelo é igual à resistência equivalente do circuito em paralelo, dividido pela resistência do resistor de interesse $k$ (aquele que planejamos encontrar a corrente) e multiplicada pela corrente total que entra na configuração em paralelo. Logo:
+
+$$
+
+i_{k} = {R_{eq} \over R_{k}} \cdot i
+
+$$
+
+</div>
+<div class="regular" style="margin-left: 7.5%;">
+
+Considerando em função das condutâncias, ${1 \over R_{k}} = G_{k}$ e $R_{eq} = G_{eq}^{-1}$, logo: $i_{k} = G_{eq}^{-1} \cdot G_{k} \cdot i$.
+
+Como $G_{eq} = G_{1} + G_{2} + \cdots + G_{n}$. Assim:
+
+
+$$
+\begin{align}
+i_{k} = {G_{k} \over {G_{1} + G_{2} + \cdots + G_{n}}} \cdot i \therefore \\
+\text{Principio da Divisao da Corrente}
+\end{align}
+$$
+
+
+Que implica que a corrente se distribui de maneira proporcional às condutâncias, atingindo maiores valores nos ramos de maior condutância (e menor resistividade).
+
+</div>
+</div>
+
+
+---
+
+<!-- _class: lead -->
+## Exemplo - Divisão de Correntes
+
+<div class="regular">
+
+1. Em um terminal elétrico estão ligados em paralelo: Um microcomputador com uma fonte de $440W$, um aparelho de som cuja resistência equivalente é de $220 \Omega$ e um monitor LCD de 24 polegadas que consome $1.5 A$. Sabendo que a tensão de operação de todos os equipamentos é de $110V$ e considerando que a capacidade máxima de corrente do terminal é de 10A, que sobre este terminal é aplicada uma tensão de 110V (tensão residencial) e que existe um dispositivo de proteção (fusível) acoplado a este terminal, que desarma na ocorrência de correntes superiores à $10A$, é possível ligar um segundo monitor LCD em paralelo a este terminal?
+
+2. Para o circuito do exercício anterior:
+
+- Desenhe o diagrama que o representa com cada um de seus elementos identificados;
+- Calcule para cada um dos elementos do circuito:
+	- A resistência que possui;
+	- A corrente que passa através de si;
+	- A tensão a que está submetido;
+	- A potência elétrica que consome.
+- Por fim, calcule a resistência equivalente do circuito, sua corrente, sua tensão e sua potência total.
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Exemplo - Divisão de Correntes
+</div>
+<div class="two-columns-50-50" style="top: 20%;">
+<div class="regular" >
+
+Começamos a resolver o exemplo a partir do exercício 2 e desenhamos inicialmente o diagrama do circuito para viabilizar nossa resolução:
+
+<center>
+    <img src='img/circuito-exemplo-divisao-correntes.png' class='transparent' >
+</center>
+
+Sabemos que todos os equipamentos trabalham na tensão de $110V$ e por estarem em paralelo, possuem esta mesma tensão em suas entradas.
+
+</div>
+<div class="regular" style="margin-left: 5%;">
+
+Agora, sabemos a corrente do monitor $i_{3} = 1.5A$, devemos calcular as correntes do computador e do som.
+
+Começando pelo som, pela lei de Ohm, temos que $I = {V \over R}$. Considerando que a tensão é de $110V$ e a resistência do aparelho de som é de $220 \Omega$, logo, $i_{2} = {110 \over 220} = 0.5 A$. Conseguimos também calcular sua potência $P = 110 \times 0.5 = 55W$.
+
+Avançando para o computador, sabemos da potência elétrica que $P = VI$. Considerando que $V = 110V$ e $P = 440W$, logo, $i_{1} = {440 \over 110} = 4A$.
+
+Sabemos pela LKC que $I = i_{1} + i_{2} + i_{3}$. Então, $I = 4 + 0.5 + 1.5 = 6A$.
+
+Considerando que mais um monitor em paralelo acrescentaria uma carga de $+1.5A$, que a carga total com este monitor seria de $7.5 < 10A$, logo, é possível adicionar mais um monitor a esta configuração.
+
+</div>
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Exemplo - Divisão de Correntes
+</div>
+<div class="two-columns-50-50" style="top: 20%;">
+<div class="regular" >
+
+<center>
+    <img src='img/circuito-exemplo-divisao-correntes.png' class='transparent' >
+</center>
+
+Continuando a resolução, cientes das correntes $i_{1}, i_{2}, i_{3}$, serão calculados as outras grandezas solicitadas no exercício. Para calcular a resistência $R_{1}$ do computador, podem ser utilizadas duas fórmulas: $R = {V \over I}$ ou $R = {P \over I^{2}}$.
+
+$$
+\begin{align}
+R_{1} = {110 \over 4} = {440 \over 16} = 27.5 \Omega
+\end{align}
+$$
+
+</div>
+<div class="regular" style="margin-left: 5%;">
+
+Considerando que o Monitor possui uma corrente de $1.5A$ e uma tensão de $110V$, logo:
+
+$$
+R_{3} = {110 \over 1.5} = {220 \over 3} \Omega
+$$
+
+E sua potência é de $165W$
+
+Sabe-se que a corrente $i$ do circuito é de $6A$. A resistência equivalente do circuito é dada por ${110 \over 6} = {220 \over 12} \Omega$ e sua potência total é de $110 \times 6 = 660 W$
+
+Conferindo a resistência equivalente do circuito pela equação:
+
+<div class="small">
+
+$$
+\begin{align}
+R_{eq} &= {{1} \over {{{1} \over {27.5}} + {{1} \over {220}} +{{1} \over {{{220} \over {3}}}}}} \\
+R_{eq} &= {{1} \over {{{8} \over {220}} + {{1} \over {220}} + {{3} \over {220}}}} \\
+R_{eq} &= {220 \over 12} \Omega
+\end{align}
+$$
+
+</div>
+
+</div>
+</div>
+
+
+---
+
+<div class="cabecalho">
+    Exercícios - Lista 2 (Entrega em 15/08/2023)
+</div>
+<div class="conteudo">
+
+- Problemas do capítulo 2 do livro Circuitos Elétricos 10ª Edição (Riedel e Nillson): 2.18, 2.19, 2.20, 2.21, 2.22.
+- Problemas do capítulo 3 do livro Circuitos Elétricos 10ª Edição (Riedel e Nillson): 3.3, 3.4, 3.6, 3.7, 3.8, 3.9, 3.12, 3.13, 3.16, 3.18, 3.30.
+
+Livro: ISBN 978-85-4301-812-6
+
+</div>
+
+
+---
+
+<div class="cabecalho large">
+Referências Bibliográficas
+</div>
+<div class="conteudo normal">
+
+- RIEDEL, SUSAN A.; NILSSON, James W. Circuitos Elétricos. 2015.
+- MELO, EMERSON G. de. Curso: LOM3202 - Circuitos Elétricos (2020). 2020. Disponível em: https://edisciplinas.usp.br/course/view.php?id=82680. Acesso em 31 de Julho de 2023.
+- Khan Academy. Curso de Engenharia Elétrica. Disponível em: https://pt.khanacademy.org. Acesso em 31 de Julho de 2023.
+
+
 </div>

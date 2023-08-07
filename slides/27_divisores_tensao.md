@@ -1,4 +1,4 @@
-<div class="cabecalho">
+<div class="cabecalho large">
     
 Divisão da Tensão
 
