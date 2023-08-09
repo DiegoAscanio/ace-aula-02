@@ -1224,6 +1224,135 @@ Livro: ISBN 978-85-4301-812-6
 
 ---
 
+<div class="cabecalho">
+Gabarito da Lista
+</div>
+<div class="two-columns-50-50">
+<div class="regular">
+
+- 2.18:
+    - a) $i_{a} = 2A, i_{b} = 0.5A, i_{g} = 2.5A$
+    - b) $i_{b} = 0.5A$
+    - c) $v_{0} = 40V$
+- 2.19:
+    - a) $i_{1} = 1.2A, i_{2} = 0.3A$
+    - b) $v_{0} = v_{1} = 120V$
+    - c) $\sum{P_{\text{dev}}} = 180W \text{ } \sum{P_{\text{abs}}} = 144 + 13.5 + 22.5 = 180W$
+- 2.20:
+    - a) $i_{a} = {3.5 \over 175} = 0.02 A$ (Lei de Ohm); $i_{1} = i_{a} = 0.02A$
+    - b) $v_{b} = 200 i_{1} = 200(0.02) = 4V$ (Lei de Ohm); 
+      $-v_{1} + v_{b} + 3.5 = 0 \rightarrow v_{1} = 3.5 + v_{b} = 3.5 + 4 = 7.5V$
+
+</div>
+<div class="regular">
+
+- 2.20:
+    - c) $v_{a} = 0.05 (50) = 2.5V$ (Lei de Ohm) 
+      $-v_{g} + v_{a} + v_{1} = 0 \rightarrow$
+      $v_{g} = v_{a} + v_{1} = 2.5 + 7.5 = 10V$
+    - d) $p_{g} = v_{g} (0.05) = 10 (0.05) = 0.5 W$
+- 2.21:
+    - a) $v_{0} = 16V, i_{0} = 8 mA$
+    - b) $i_{g} = 10 mA$
+    - c) $p_{g} = -160 mW$
+- 2.22:
+    - a) $v_{2} = 100V, i_{2} = 4A, i_{3} = 3A$
+      $v_{1} = 130V, i_{1} = 2A, i_{4} = 5A, i_{g} = 6A$
+
+</div>
+</div>
+
+
+---
+
+<div class="cabecalho">
+Gabarito da Lista
+</div>
+<div class="two-columns-50-50">
+<div class="regular">
+
+- 3.6:
+    - a) 3.4(a): $R_{\text{eq}} = 36\Omega$
+         3.4(b): $R_{\text{eq}} = 60\Omega$
+         3.4(c): $R_{\text{eq}} = 150 k\Omega$
+         3.4(d): $R_{\text{eq}} = 3.25 k\Omega$
+
+    - b) 3.4(a): $P = 9 W$
+         3.4(b): $P = 54 mW$
+         3.4(c): $P = 24 mW$
+         3.4(d): $P = 1.3 W$
+- 3.7:
+    - a) 3.7(a) $R_{\text{eq}} = 60 \Omega$
+         3.7(b) $R_{\text{eq}} = 20 \Omega$
+         3.7(c) $R_{\text{eq}} = 4 k\Omega$
+         3.7(d) $R_{\text{eq}} = 300\Omega$
+
+
+</div>
+<div class="regular">
+
+- 3.7:
+    - b) 3.7(a) $P = 15 W$
+         3.7(b) $P = 128 mW$
+         3.7(c) $P = 100 mW$
+         3.7(d) $P = 750 mW$
+- 3.8:
+    - a) $R_{\text{ab}} = 72 \Omega$
+    - b) $R_{\text{ab}} = 10 k\Omega$
+    - c) $R_{\text{ab}} = 288 \Omega$
+- 3.9:
+    - a) $R_{\text{ab}} = 12 \Omega$
+    - b) $R_{\text{ab}} = 30 \Omega$
+    - c) $R_{\text{ab}} = 1.4 k\Omega$
+    - d) $R_{\text{ab}} = 25 \Omega$
+
+</div>
+</div>
+
+
+---
+
+<div class="cabecalho">
+Gabarito da Lista
+</div>
+<div class="two-columns-50-50">
+<div class="regular">
+
+- 3.12:
+    - a) $v_{0} = 66 V$
+    - b) $i = 20 mA$
+         $P_{R_{1}} = 1.88W$
+         $P_{R_{2}} = 1.32W$
+    - c) $R_{1} \geq 17672 \Omega$
+         $R_{2} = 12408 \Omega$
+
+- 3.13:
+    - $R_{2} = 10 \Omega, R_{e} = {120 \over 17} \Omega, R_{L} = 24 \Omega$
+
+- 3.16:
+    - $R_{\text{eq}} = 5 \Omega, v_{10A} = v_{10\Omega} = 50 V$
+      $v_{5\Omega} = 20V$
+      $P_{5\Omega} = 80W$
+
+</div>
+<div class="regular">
+
+- 3.18:
+    - $i_{2} = 8.33mA, i_{1} = 5mA, i_{3} = 16.67mA, i_{4} = 20mA$
+    - $R_{1} = 5k\Omega, R_{2} = 3k\Omega, R_{3} = 1.5k\Omega, R_{4} = 1.25k\Omega$
+
+- 3.30:
+    - $R_{\text{eq}} = 45 \Omega$
+    - $v_{R_{\text{eq}}} = 1 V$
+    - $v_{1} = {5 \over 9} V$
+    - $v_{2} = {1 \over 3} V$
+
+</div>
+</div>
+
+
+---
+
 <div class="cabecalho large">
 Referências Bibliográficas
 </div>
