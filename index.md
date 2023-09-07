@@ -143,7 +143,7 @@ Divinópolis, 2023.
 Revisão - Lei de Ohm
 
 </div>
-<div class="two-columns-50-50">
+<div class="two-columns-66-33">
 
 <div class="regular">
 
@@ -829,7 +829,7 @@ Divisão da Tensão
 </div>
 <div class="conteudo small">
 
-- Em resistores em série, a corrente $i$ é igual em todas as resistências porquê a carga elétrica não pode se acumular em um resistor, sempre fluindo do ponto de maior potencial elétrico para o ponto de menor potencial. Portanto, $V_{Rk} = R_{k} \cdot i$
+- Em resistores em série, a corrente $i$ é igual em todas as resistências porque a carga elétrica não pode se acumular em um resistor, sempre fluindo do ponto de maior potencial elétrico para o ponto de menor potencial. Portanto, $V_{Rk} = R_{k} \cdot i$
 
 <center>
     <img src="https://cdn.kastatic.org/ka-perseus-images/7c02d028f874842f69e5967b3972ab2e35ec21cf.svg" class="transparent" width="25%">

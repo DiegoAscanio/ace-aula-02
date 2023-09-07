@@ -3,7 +3,7 @@
 Revisão - Lei de Ohm
 
 </div>
-<div class="two-columns-50-50">
+<div class="two-columns-66-33">
 
 <div class="regular">
 
